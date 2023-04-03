@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Parcel / Mermaid Import Issue</title>
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <h1>Parcel / Mermaid Import Issue</h1>
+    <pre>
+    <code id="diagram-code">
+  graph TD
+    subgraph Extension
+        BackgroundScript((Background&lt;br&gt;Script))
+        ContentScript((Content&lt;br&gt;Script))
+        BackgroundScript--&gt;ContentScript: Send message
+        ContentScript--&gt;BackgroundScript: Send message
+    end
+    subgraph Chrome
+        Tab(Tab)
+        Tab--&gt;ContentScript
+    end
+    </code>
+    </pre>
+    <button id="render">Render</button>
+    <div id="diagram"></div>
+  </body>
+</html>

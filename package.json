@@ -1,0 +1,25 @@
+{
+  "name": "parcel-mermaid-import-issue",
+  "version": "0.0.1",
+  "description": "Minimal code sample that reproduces an import issue between parcel/mermaid",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmkerr/parcel-mermaid-import-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwmkerr/parcel-mermaid-import-issue/issues"
+  },
+  "homepage": "https://github.com/dwmkerr/parcel-mermaid-import-issue#readme",
+  "dependencies": {
+    "mermaid": "^10.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
