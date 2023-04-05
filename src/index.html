@@ -9,17 +9,12 @@
     <h1>Parcel / Mermaid Import Issue</h1>
     <pre>
     <code id="diagram-code">
-  graph TD
-    subgraph Extension
-        BackgroundScript((Background&lt;br&gt;Script))
-        ContentScript((Content&lt;br&gt;Script))
-        BackgroundScript--&gt;ContentScript: Send message
-        ContentScript--&gt;BackgroundScript: Send message
-    end
-    subgraph Chrome
-        Tab(Tab)
-        Tab--&gt;ContentScript
-    end
+sequenceDiagram
+    participant ExtensionContentScript
+    participant BackgroundScript
+    
+    ExtensionContentScript->>+BackgroundScript: Request message
+    BackgroundScript-->>-ExtensionContentScript: Response message
     </code>
     </pre>
     <button id="render">Render</button>
