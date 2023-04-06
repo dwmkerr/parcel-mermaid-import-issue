@@ -4,8 +4,10 @@
   "description": "Minimal code sample that reproduces an import issue between parcel/mermaid",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel watch src/manifest.json --host localhost --config @parcel/config-webextension",
-    "build": "parcel build --no-optimize src/manifest.json --config @parcel/config-webextension",
+    "start": "webpack -w --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "start:parcel": "parcel watch src/manifest.json --host localhost --config @parcel/config-webextension",
+    "build:parcel": "parcel build --no-optimize src/manifest.json --config @parcel/config-webextension",
     "start-sample-page": "parcel serve ./sample-page/index.html"
   },
   "repository": {
@@ -23,6 +25,11 @@
   },
   "devDependencies": {
     "@parcel/config-webextension": "^2.8.3",
-    "parcel": "^2.8.3"
+    "copy-webpack-plugin": "^11.0.0",
+    "parcel": "^2.8.3",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.3",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
   }
 }
