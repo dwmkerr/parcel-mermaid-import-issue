@@ -1,0 +1,16 @@
+
+{
+  "manifest_version": 3,
+  "name": "parcel-mermaid-import-issue",
+  "version": "0.0.1",
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  },
+  "content_scripts": [{
+    "js": ["content.ts"],
+    "matches": [
+      "http://localhost/*"
+    ]
+  }]
+}
