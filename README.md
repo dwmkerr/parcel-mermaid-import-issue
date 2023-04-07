@@ -9,6 +9,7 @@ Note:
 - `main` demonstrates the bug as raised at 
 - [`feat/simple-website-demo`](https://github.com/dwmkerr/parcel-mermaid-import-issue/tree/feat/simple-website-demo) branch shows that the bug does not seem to occur for a simple website, whether `--no-optimize` is used or not
 - [`feat/webpack`](https://github.com/dwmkerr/parcel-mermaid-import-issue/tree/feat/webpack) - seems to reproduce the issue in webpack
+- [`feat/rollup.js`](https://github.com/dwmkerr/parcel-mermaid-import-issue/tree/feat/rollup.js) - demonstrates that using rollup.js as a bundler resolves the issue
 
 ## Issue Reproduction Steps
 
