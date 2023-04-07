@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "Minimal code sample that reproduces an import issue between parcel/mermaid",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "type": "module",
   "scripts": {
-    "start": "parcel watch src/manifest.json --host localhost --config @parcel/config-webextension",
-    "build": "parcel build --no-optimize src/manifest.json --config @parcel/config-webextension",
-    "start-sample-page": "parcel serve ./sample-page/index.html"
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,10 @@
     "mermaid": "^10.0.2"
   },
   "devDependencies": {
-    "@parcel/config-webextension": "^2.8.3",
-    "parcel": "^2.8.3"
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "chrome-launcher": "^0.15.1",
+    "rollup": "^3.20.2",
+    "rollup-plugin-chrome-extension": "^3.6.12"
   }
 }
