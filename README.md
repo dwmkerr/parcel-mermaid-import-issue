@@ -1,8 +1,10 @@
 # parcel-mermaid-import-issue
 
-Minimal code sample that reproduces an import issue between parcel/mermaid.
+Minimal code sample that reproduces an import issue between parcel/mermaid:
 
-This repo has two branches to demonstrate the behaviour:
+https://github.com/parcel-bundler/parcel/issues/8935
+
+This repo has three branches to demonstrate the behaviour:
 
 Note:
 
