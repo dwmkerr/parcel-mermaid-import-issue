@@ -4,11 +4,11 @@
   "name": "parcel-mermaid-import-issue",
   "version": "0.0.1",
   "background": {
-    "service_worker": "background.ts",
+    "service_worker": "src/background.ts",
     "type": "module"
   },
   "content_scripts": [{
-    "js": ["content.ts"],
+    "js": ["src/content.ts"],
     "matches": [
       "http://localhost/*"
     ]

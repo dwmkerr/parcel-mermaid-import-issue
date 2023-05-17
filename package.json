@@ -4,8 +4,9 @@
   "description": "Minimal code sample that reproduces an import issue between parcel/mermaid",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel watch src/manifest.json --host localhost --config @parcel/config-webextension",
-    "build": "parcel build --no-optimize src/manifest.json --config @parcel/config-webextension",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "start-sample-page": "parcel serve ./sample-page/index.html"
   },
   "repository": {
@@ -22,7 +23,8 @@
     "mermaid": "^10.0.2"
   },
   "devDependencies": {
-    "@parcel/config-webextension": "^2.8.3",
-    "parcel": "^2.8.3"
+    "@crxjs/vite-plugin": "^1.0.14",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.15"
   }
 }
